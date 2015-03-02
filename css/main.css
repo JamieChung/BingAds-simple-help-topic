@@ -81,6 +81,12 @@ a:hover {
     color: #3399FF;
 }
 
+h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0;
+}
+
 span.ui_item {
     font-weight: bold;
     color: #707070;
@@ -102,7 +108,7 @@ span.ui_item {
     list-style-type: none !important;
 }
 .expando-body ul li {
-    padding-bottom: 0.25em;
+    padding-bottom: 0.5em;
 }
 
 strong {

@@ -65,22 +65,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    margin: 1em;
+    font-family: Helvetica, Arial, Sans-Serif;
+    color: #505050;
+}
 
 
+a {
+    color: #0044cc;
+    text-decoration: none;
+}
 
+a:hover {
+    color: #3399FF;
+}
 
+span.ui_item {
+    font-weight: bold;
+    color: #707070;
+}
 
+.expando {
+    border-top: 1px solid #cccccc;
+    padding: .5em 0;
+}
 
+.expando-body {
+    margin-top: 0.5em;
+}
 
+.expando-body ul {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 10px;
+    list-style: none;
+    list-style-type: none !important;
+}
+.expando-body ul li {
+    padding-bottom: 0.25em;
+}
 
-
-
-
-
-
-
-
-
+strong {
+    font-weight: bold;
+    color: #707070;
+}
 
 /* ==========================================================================
    Helper classes

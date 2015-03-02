@@ -77,7 +77,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .expando-head.active {
     color: #3399FF;
 }
 

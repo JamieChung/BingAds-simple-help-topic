@@ -19,13 +19,14 @@
             link.click(function(e){
                 e.preventDefault();
                 content.slideToggle();
+                link.toggleClass('active');
             });
 
         }
     });
 
     $(document).ready(function(){
-        $('title').text($('#html-title').text());  
+        $('title').text($('#html-title').text());
     });
 
 })(jQuery);

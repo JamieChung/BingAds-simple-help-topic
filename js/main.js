@@ -24,4 +24,8 @@
         }
     });
 
+    $(document).ready(function(){
+        $('title').text($('#html-title').text());  
+    });
+
 })(jQuery);

@@ -96,6 +96,9 @@ span.ui_item {
     border-top: 1px solid #cccccc;
     padding: .5em 0;
 }
+.expando:last-child {
+    border-bottom: 1px solid #cccccc;
+}
 
 .expando-body {
     margin-top: 0.5em;

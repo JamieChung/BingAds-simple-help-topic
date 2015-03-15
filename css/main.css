@@ -71,7 +71,6 @@ body {
     color: #505050;
 }
 
-
 a {
     color: #0044cc;
     text-decoration: none;
@@ -100,10 +99,6 @@ span.ui_item {
     border-bottom: 1px solid #cccccc;
 }
 
-.expando-body {
-    margin-top: 0.5em;
-}
-
 .expando-body ul {
     margin: 0 0 0 10px;
     padding: 0 0 0 10px;
@@ -118,6 +113,48 @@ strong {
     font-weight: bold;
     color: #707070;
 }
+
+table {
+    margin-bottom: 1em;
+}
+
+table th.table_head_cell {
+    padding: 3px 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #eaecee;
+    border-bottom: 1px solid #eaecee;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #707070;
+    margin: 0 10px;
+    display: table-cell;
+}
+table tr {
+    border-bottom: 1px solid #AAA;
+}
+table td {
+    line-height: 1.5;
+    padding: 6px;
+}
+
+.MORE_INFO_ICON_NOTE {
+    background: url(img/note.png) no-repeat 0 6px;
+    border-top: 1px solid #009AD9;
+    border-bottom: 1px solid #009AD9;
+    margin: 5px 0 15px 0;
+    padding: 8px 0 0 24px;
+}
+.MORE_INFO_ICON_NOTE h5 {
+    margin: 0;
+    padding: 0;
+    color: #009AD9;
+    text-transform: uppercase;
+}
+
+.MORE_INFO_ICON_NOTE p {
+    margin: 6px 0;
+}
+
 
 /* ==========================================================================
    Helper classes

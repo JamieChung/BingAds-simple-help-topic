@@ -21,12 +21,42 @@
                 content.slideToggle();
                 link.toggleClass('active');
             });
-
         }
     });
+    
 
     $(document).ready(function(){
         $('title').text($('#html-title').text());
+        
+        var input = {
+            'ContentId': 'hlp_bam_conc_faq1.htm',
+            'Project': 'bing_ads_mobile',
+            'Language': 'en-us',
+            'Query': 'help',
+            'Queries': 'hlp_bam_conc_faq1.htm',
+            'Market': 'en-us',
+            'Method': 'GetContent'
+        };
+        
+        var url = 'http://help.bingads.microsoft.com' + "/ApexContentHandler.ashx";
+        $.ajax({
+          url: url,
+          data: input,
+          crossDomain: true,
+          dataType: 'jsonp',
+          cache: false,
+          timeout: 60000,
+          jsonpCallback: 'GetHTMLHelpContent'
+        });
     });
 
 })(jQuery);
+    
+function GetHTMLHelpContent (object) {
+    if (object && object.Contents) {
+        document.getElementById('html-content').innerHTML = object.Contents;
+        jQuery("div[id^='explist']:first").ExpanderList({Multiple:true});
+        jQuery('#html-title').html(jQuery('h4:first').html());
+        jQuery('h4:first').remove();
+    }
+}

@@ -102,8 +102,7 @@ span.ui_item {
 .expando-body ul {
     margin: 0 0 0 10px;
     padding: 0 0 0 10px;
-    list-style: none;
-    list-style-type: none !important;
+    list-style-type: circle;
 }
 .expando-body ul li {
     padding-bottom: 0.5em;
@@ -116,6 +115,7 @@ strong {
 
 table {
     margin-bottom: 1em;
+    width: 100%;
 }
 
 table th.table_head_cell {
@@ -153,6 +153,18 @@ table td {
 
 .MORE_INFO_ICON_NOTE p {
     margin: 6px 0;
+}
+
+.HEADING {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+hr {
+    margin: 5px 0;
+    height: 3px;
+    border: none;
+    background: #eaecee;
 }
 
 
